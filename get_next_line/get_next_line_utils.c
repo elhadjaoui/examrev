@@ -42,13 +42,13 @@ char	*ft_sub(char *string)
 
 	y = 0;
 	x = 0;
-	if (string == NULL)
+	/*if (string == NULL)
 	{
 		if (!(baby = malloc(1)))
 			return (NULL);
 		baby[0] = 0;
 		return (baby);
-	}
+	}*/
 	while (string[x] != '\0' && string[x] != '\n')
 		x++;
 	if (!(baby = malloc(x + 1)))
@@ -100,6 +100,6 @@ char	*ft_join(char *string1, char *string2)
 		thenew[i + j] = string2[j];
 	while (i--)
 		thenew[i] = string1[i];
-	ft_free(&string1);
+	//ft_free(&string1);
 	return (thenew);
 }

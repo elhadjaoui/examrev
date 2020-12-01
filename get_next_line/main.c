@@ -22,4 +22,5 @@ main(void)
 	printf("%s", line);
 	free(line);
 	line = NULL;
+	//while(1);
 }

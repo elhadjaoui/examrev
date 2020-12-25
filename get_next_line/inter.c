@@ -2,25 +2,17 @@
 
 int main (int ac, char **av)
 {
-    int i;
     int j;
-    char s[255];
+    char s[255] = {0};
 
-    i = 0;
     j = 0;
-    while (i < 255)
-    {
-             s[i] = 0;
-             i++;
-    }
-       
     if (ac == 3)
     {
         while (av[2][j])
         {
                  if (s[(unsigned char)av[2][j]] == 0)
-                    s[(unsigned char)av[2][j]] = 1;
-                    j++;
+			 s[(unsigned char)av[2][j]] = 1;
+		 j++;
         }
         j = 0;
         while (av[1][j])
